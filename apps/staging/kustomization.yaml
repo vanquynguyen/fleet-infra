@@ -3,6 +3,7 @@ kind: Kustomization
 namespace: metabase
 resources:
   - ../base/metabase
+  - imagepolicy.yaml
 patches:
   - path: metabase-values.yaml
     target:
