@@ -1,0 +1,17 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: metabase
+  namespace: metabase
+spec:
+  chart:
+    spec:
+      version: "1.0.3"
+  values:
+    image:
+      tag: latest
+    ingress:
+      enabled: true
+      ingressClassName: nginx
+      hosts:
+        - host: mb.production.com
