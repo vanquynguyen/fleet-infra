@@ -11,7 +11,7 @@ spec:
     enable: false
   values:
     image:
-      tag: v0.44.0 # {"$imagepolicy": "flux-system:metabase:tag"}
+      tag: v0.50.0-RC1 # {"$imagepolicy": "flux-system:metabase:tag"}
     ingress:
       enabled: true
       ingressClassName: nginx
